@@ -1,0 +1,17 @@
+{
+    "name": "janst/my-framework",
+    "autoload": {
+        "psr-4": {
+            "Janst\\MyFramework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JanSterle1337",
+            "email": "jan.sterle123@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-foundation": "^6.1"
+    }
+}
