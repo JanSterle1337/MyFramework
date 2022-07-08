@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'janst/my-framework',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '0faae98956f5f1c63eace41ad1cf60dee75c2679',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,11 +11,20 @@
     ),
     'versions' => array(
         'janst/my-framework' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '0faae98956f5f1c63eace41ad1cf60dee75c2679',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'league/plates' => array(
+            'pretty_version' => 'v3.4.0',
+            'version' => '3.4.0.0',
+            'reference' => '6d3ee31199b536a4e003b34a356ca20f6f75496a',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/plates',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

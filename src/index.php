@@ -1,8 +1,11 @@
 <?php
-require_once 'vendor/autoload.php';
-require './classes/Route.php';
+require_once '../vendor/autoload.php';
+require '../classes/Route.php';
+
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+$templates = new League\Plates\Engine(__DIR__ . '/views');
 
 $request = Request::createFromGlobals();
 $path = $request->getPathInfo();
@@ -32,39 +35,10 @@ $router->set($path,'funkcija');
 
 
 if (in_array($path, ['', '/'])) {
-    $response = new Response('Welcome to the homepage.');
+    $response = new Response($templates->render('Home'));
 } elseif ('/contact' === $path) {
-    $response = new Response('Contact us');
+    $response = new Response($templates->render('Contact'));
 } else {
     $response = new Response('Page not found.', Response::HTTP_NOT_FOUND);
 }
 $response->send();
-
-
-
-
-
-
-
-
-
-/*$request = Request::createFromGlobals();
-/*echo "<pre>";
-var_dump($request);
-echo "</pre>"; */
-/*echo "</br>";
-$path = $request->getPathInfo();
-echo $path;
-
-
-if (in_array($path, ['','/'])) {
-    $response = new Response('Welcome to the homepage');
-    echo $response;
-} else if ('/contact' === $path) {
-    $response = new Response('Contact us');
-    echo $response;
-} else {
-    $response = new Response('Page not found', RESPONSE::HTTP_NOT_FOUND);
-    echo $response;
-}
-/*$response->send(); */

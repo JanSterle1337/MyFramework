@@ -17,6 +17,10 @@ class ComposerStaticInita0e54e07ebd78953576b5f07e0a02089
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\HttpFoundation\\' => 33,
         ),
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
         'J' => 
         array (
             'Janst\\MyFramework\\' => 18,
@@ -31,6 +35,10 @@ class ComposerStaticInita0e54e07ebd78953576b5f07e0a02089
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
         ),
         'Janst\\MyFramework\\' => 
         array (
